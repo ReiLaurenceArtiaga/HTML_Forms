@@ -89,6 +89,30 @@ body {
 .form-row .checkbox-label { margin-bottom: 0;
         }
 
+.legacy-form-row {
+            border: none;
+            margin-bottom: 40px;
+        }
+        
+.legacy-form-row legend {
+            margin-bottom: 15;
+        }
+        
+.legacy-form-row .radio- label {
+            display: block;
+            font-size: 14px;
+            padding: 0 20px 0 10px;
+        }
+        
+.legacy-form-row input [input='radio'] {
+            margin-top: 2px;
+        }
+        
+.legacy-form-row .radio-label,
+.legacy-form-row input [input='radio'] {
+            float: left;
+        }
+
 @media only screen and (min-width: 700px) {
     .speaker-form-header,
     .speaker-form {
@@ -121,6 +145,19 @@ body {
 
     .form-row .checkbox-label { 
         margin-left: 120px; width: auto;
+    }
+
+    .legacy-form-row {
+        margin-bottom: 10px;
+    }
+    .legacy-form-row legend {
+        width: 120px;
+        text-align: right;
+        align-items: flex-start;
+        padding-right: 20px;
+    }
+    .legacy-form-row legend {
+        float: left;
     }
 }
 

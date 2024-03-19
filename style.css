@@ -89,13 +89,21 @@ body {
 .form-row .checkbox-label { margin-bottom: 0;
         }
 
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+    color: #ffffff;
+    background-color: #D55C5F;
+    box-shadow: none;
+}
+
 .legacy-form-row {
             border: none;
             margin-bottom: 40px;
         }
         
 .legacy-form-row legend {
-            margin-bottom: 15;
+            margin-bottom: 15px;
         }
         
 .legacy-form-row .radio- label {
@@ -136,6 +144,7 @@ body {
     .form-row label {
         text-align: right;
         width: 120px;
+        margin-top: 7px;
         padding-right: 20px;
     }
 
@@ -153,7 +162,6 @@ body {
     .legacy-form-row legend {
         width: 120px;
         text-align: right;
-        align-items: flex-start;
         padding-right: 20px;
     }
     .legacy-form-row legend {
@@ -161,11 +169,3 @@ body {
     }
 }
 
-.form-row input[type='text']:invalid,
-.form-row input[type='email']:invalid {
-    border: 1px solid #D55C5F;
-    color: #ffffff;
-    background-color: #D55C5F;
-    
-    box-shadow: none;
-}
